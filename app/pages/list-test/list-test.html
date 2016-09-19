@@ -1,0 +1,63 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Listas</ion-title>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="list-test">
+
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>Star Wars</ion-item-divider>
+      <ion-item *ngFor="let p of personagens">
+        <ion-avatar item-left>
+          <img src="{{p.img}}">
+        </ion-avatar>
+        <h2>{{p.nome}}</h2>
+        <p>{{p.desc}}</p>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>Star Wars - Sliding</ion-item-divider>
+      <ion-item-sliding *ngFor="let p of personagens">
+        <ion-item>
+          <ion-avatar item-left>
+            <img src="{{p.img}}">
+          </ion-avatar>
+          <h2>{{p.nome}}</h2>
+          <p>{{p.desc}}</p>
+        </ion-item>
+        <ion-item-options>
+          <button>
+            <ion-icon name="more"></ion-icon><span small-txt>Detalhes</span>
+          </button>
+          <button>
+            <ion-icon name="text"></ion-icon>Mensagem
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-item-group>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>Star Wars</ion-item-divider>
+      <ion-item *ngFor="let p of persons">
+        <ion-avatar item-left>
+          <img src="{{p.img}}">
+        </ion-avatar>
+        <h2>{{p.nome}}</h2>
+        <p>{{p.desc}}</p>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+</ion-content>

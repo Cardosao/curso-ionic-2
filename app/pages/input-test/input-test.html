@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>input-test</ion-title>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Login</ion-label>
+      <ion-input name="login" [(ngModel)]="login"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input name="senha" type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+
+  <button block fc-light-sea (click)="showAlert()">Mostrar</button>
+  <button block fc-light-sea (click)="goToPage(home)">Entrar</button>
+
+</ion-content>

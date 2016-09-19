@@ -3,6 +3,15 @@ import { ionicBootstrap, Platform } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
 import { HomePage } from './pages/home/home';
+import { TestPage } from './pages/test/test';
+import { LowerTestPage } from './pages/lower-test/lower-test';
+import { AlertPage } from './pages/alert/alert';
+import { ButtonTestePage } from './pages/button-teste/button-teste';
+import { CardTestePage } from './pages/card-teste/card-teste';
+import { IconTestePage } from './pages/icon-teste/icon-teste';
+import { InputTestPage } from './pages/input-test/input-test';
+import { ListTestPage } from './pages/list-test/list-test';
+import { GridTestPage } from './pages/grid-test/grid-test';
 
 
 @Component({
@@ -12,7 +21,15 @@ import { HomePage } from './pages/home/home';
 export class MyApp {
 
   home: any = HomePage;
-
+  test: any = TestPage;
+  lower: any = LowerTestPage;
+  alert: any = AlertPage;
+  btTest: any = ButtonTestePage;
+  cards:any = CardTestePage;
+  icons: any = IconTestePage;
+  inputs: any = InputTestPage;
+  lists: any = ListTestPage;
+  grids: any = GridTestPage;
   rootPage: any = this.home;
 
   constructor(public platform: Platform) {
