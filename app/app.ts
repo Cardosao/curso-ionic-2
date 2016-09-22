@@ -12,6 +12,9 @@ import { IconTestePage } from './pages/icon-teste/icon-teste';
 import { InputTestPage } from './pages/input-test/input-test';
 import { ListTestPage } from './pages/list-test/list-test';
 import { GridTestPage } from './pages/grid-test/grid-test';
+import { ModalPage } from './pages/modal/modal';
+import { NavTestPage } from './pages/nav-test/nav-test';
+import { TabTestPage } from './pages/tab-test/tab-test';
 
 
 @Component({
@@ -21,6 +24,7 @@ import { GridTestPage } from './pages/grid-test/grid-test';
 export class MyApp {
 
   home: any = HomePage;
+  rootPage: any = this.home;
   test: any = TestPage;
   lower: any = LowerTestPage;
   alert: any = AlertPage;
@@ -30,7 +34,10 @@ export class MyApp {
   inputs: any = InputTestPage;
   lists: any = ListTestPage;
   grids: any = GridTestPage;
-  rootPage: any = this.home;
+  modals: any = ModalPage;
+  navega: any = NavTestPage;
+  abas: any = TabTestPage;
+
 
   constructor(public platform: Platform) {
     platform.ready().then(() => {

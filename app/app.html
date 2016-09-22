@@ -10,11 +10,14 @@
       <button ion-item (click)="openPage(home)" menuClose>
         Home
       </button>
+      <button ion-item (click)="openPage(abas)" menuClose>
+        Tabs
+      </button>
+      <button ion-item (click)="openPage(navega)" menuClose>
+        Navegação
+      </button>
       <button ion-item (click)="openPage(cards)" menuClose>
         Cards
-      </button>
-      <button ion-item (click)="openPage(test)" menuClose>
-        Test
       </button>
       <button ion-item (click)="openPage(lower)" menuClose>
         LowerTest
@@ -37,9 +40,15 @@
       <button ion-item (click)="openPage(grids)" menuClose>
         Grids
       </button>
+      <button ion-item (click)="openPage(modals)" menuClose>
+        Modals
+      </button>
+      <button ion-item (click)="openPage(test)" menuClose>
+        Test
+      </button>
     </ion-list>
   </ion-content>
 
 </ion-menu>
 
-<ion-nav [root]="rootPage" #content></ion-nav>
+<ion-nav [root]="rootPage" swipeBackEnabled="true" #content></ion-nav>

@@ -2,13 +2,14 @@
 
   <ion-navbar>
     <ion-title>card-teste</ion-title>
-    <button menuToggle><ion-icon name="menu"></ion-icon></button>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
   </ion-navbar>
 
 </ion-header>
 
-
-<ion-content class="card-teste">
+<ion-content class="card-teste" >
 
   <ion-card>
     <ion-card-header>Cabeçalho</ion-card-header>
@@ -20,7 +21,7 @@
   </ion-card>
 
   <ion-card>
-    <img src="./../../img/earth.jpg" />
+    <img src="https://s-media-cache-ak0.pinimg.com/236x/80/f0/8c/80f08c620beab4a1eedf8b100bc3a01c.jpg"/>
     <ion-card-content>
       <ion-card-title>TERRA</ion-card-title>
       <p>
@@ -38,12 +39,15 @@
           <ion-icon name="musical-notes"></ion-icon>Listen
         </button>
       </ion-col>
-      <ion-col  text-right>
+      <ion-col text-right>
         <button fc-pink clear small>
-          <ion-icon name="share"></ion-icon><span font-min-size>Share</span>
+          <ion-icon name="share"></ion-icon>
+          <span font-min-size>Share</span>
         </button>
       </ion-col>
     </ion-row>
   </ion-card>
-
+  <ion-list padding>
+    <button (click)="voltar()" block>Voltar</button>
+  </ion-list>
 </ion-content>
