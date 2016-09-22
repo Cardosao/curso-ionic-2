@@ -15,6 +15,8 @@ import { GridTestPage } from './pages/grid-test/grid-test';
 import { ModalPage } from './pages/modal/modal';
 import { NavTestPage } from './pages/nav-test/nav-test';
 import { TabTestPage } from './pages/tab-test/tab-test';
+import { ToastTestPage } from './pages/toast-test/toast-test';
+import { ToolbarTestPage } from './pages/toolbar-test/toolbar-test';
 
 
 @Component({
@@ -37,6 +39,8 @@ export class MyApp {
   modals: any = ModalPage;
   navega: any = NavTestPage;
   abas: any = TabTestPage;
+  toasts: any = ToastTestPage;
+  toolbars: any = ToolbarTestPage;
 
 
   constructor(public platform: Platform) {

@@ -1,0 +1,72 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Toolbars</ion-title>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+  <ion-toolbar fc-light-sea position="top">
+    <ion-title>SubHeader</ion-title>
+    <ion-buttons end>
+      <button royal>
+        <ion-icon name="person-add"></ion-icon>
+      </button>
+      <button>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <div>
+        <h2>Olá Mundo</h2>
+        <ion-toolbar>
+          <ion-segment [(ngModel)]="segment">
+            <ion-segment-button value="novo">
+              Novo
+            </ion-segment-button>
+            <ion-segment-button value="noticia">
+              Notícia
+            </ion-segment-button>
+
+          </ion-segment>
+        </ion-toolbar>
+      </div>
+
+      <div [ngSwitch]="segment">
+        <ion-list *ngSwitchWhen="'novo'">
+          <ion-item>Novo</ion-item>
+          <ion-item>Novo</ion-item>
+          <ion-item>Novo</ion-item>
+          <ion-item>Novo</ion-item>
+        </ion-list>
+        <ion-list *ngSwitchWhen="'noticia'">
+          <ion-item>Noticia</ion-item>
+          <ion-item>Noticia</ion-item>
+          <ion-item>Noticia</ion-item>
+          <ion-item>Noticia</ion-item>
+        </ion-list>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+
+  <ion-toolbar fc-light-sea position="bottom">
+    <ion-title>Footer</ion-title>
+    <ion-buttons end>
+      <button royal>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+
+</ion-footer>
